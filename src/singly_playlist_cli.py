@@ -3,6 +3,7 @@ class Node:
         self.data = data
         self.next = None
 
+
 class Playlist:
     def __init__(self):
         self.head = None
@@ -25,9 +26,9 @@ class Playlist:
         current_song = self.head.data
         self.head = self.head.next  # Move to next
         print("\n🎧 Now Playing:")
-        print(f"   ────────────────────────────────")
+        print("   ────────────────────────────────")
         print(f"   ▶️  {current_song}")
-        print(f"   ────────────────────────────────")
+        print("   ────────────────────────────────")
 
     def traverse(self):
         if not self.head:
@@ -42,6 +43,7 @@ class Playlist:
             current = current.next
             i += 1
         print("   ────────────────────────────────")
+
 
 # Menu-driven interaction
 playlist = Playlist()
